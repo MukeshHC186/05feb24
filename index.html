@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05Feb24</title>
+    <style>
+        .main_container {
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "one one"
+            "two three"
+            "four five"
+            "six six";
+        }
+
+        .item1 {
+            background-color: aqua;
+            display: grid;
+            place-content: center;
+            height: 50px;
+            grid-area: one;
+        }
+        .item2 {
+            background-color: rgb(214, 218, 16);
+            display: grid;
+             place-content: center;
+            height: 50px;
+            grid-area: two;
+        }
+        .item3 {
+            background-color: rgb(171, 34, 212);
+            display: grid;
+             place-content: center;
+            height: 50px;
+            grid-area: three;
+        }
+        .item4 {
+            background-color: rgb(20, 29, 168);
+            display: grid;
+             place-content: center;
+            height: 50px;
+            grid-area: four;
+        }
+        .item5 {
+            background-color: rgb(125, 199, 28);
+            display: grid;
+             place-content: center;
+            height: 50px;
+            grid-area: five;
+        }
+        .item6 {
+            background-color: rgb(136, 11, 17);
+            display: grid;
+             place-content: center;
+            height: 50px;
+            grid-area: six;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="item1">This is Header</div>
+        <div class="item2">Child-1</div>
+        <div class="item3">Child-2</div>
+        <div class="item4">Child-3</div>
+        <div class="item5">Child-4</div>
+        <div class="item6">This is Footer</div>
+    </div>
+</body>
+
+</html>
